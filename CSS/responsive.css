@@ -1,0 +1,228 @@
+/* ==========================================================================
+   Shashwat Dwivedi | Responsive Stylesheet
+   Mobile, Tablet, and Desktop Breakpoints
+   ========================================================================== */
+
+/* --- Large Desktops & Tablets Landscape (<= 1100px) --- */
+@media (max-width: 1100px) {
+    section {
+        padding: 85px 6%;
+    }
+
+    .hero {
+        gap: 40px;
+    }
+
+    .hero h1 {
+        font-size: 3.2rem;
+    }
+
+    .hero-dynamic-role {
+        font-size: 1.5rem;
+    }
+
+    .image-wrapper {
+        width: 310px;
+        height: 310px;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 22px;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .edu-achieve-container {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+}
+
+/* --- Tablets Portrait & Smaller Desktops (<= 992px) --- */
+@media (max-width: 992px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 140px;
+        gap: 50px;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-dynamic-role {
+        justify-content: center;
+    }
+
+    .hero-description {
+        margin: 0 auto 30px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background: rgba(8, 13, 26, 0.98);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 28px;
+        transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        border-top: 1px solid var(--border-color);
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    .nav-links a {
+        font-size: 1.25rem;
+    }
+}
+
+/* --- Mobile Phones (<= 768px) --- */
+@media (max-width: 768px) {
+    section {
+        padding: 70px 5%;
+    }
+
+    .section-title h2 {
+        font-size: 2.2rem;
+    }
+
+    .hero h1 {
+        font-size: 2.6rem;
+    }
+
+    .hero-dynamic-role {
+        font-size: 1.25rem;
+    }
+
+    .image-wrapper {
+        width: 260px;
+        height: 260px;
+    }
+
+    .floating-badge {
+        padding: 8px 12px;
+        gap: 8px;
+    }
+
+    .badge-icon {
+        width: 32px;
+        height: 32px;
+        font-size: 0.95rem;
+    }
+
+    .badge-text strong {
+        font-size: 0.8rem;
+    }
+
+    .badge-top {
+        right: -10px;
+        top: -15px;
+    }
+
+    .badge-bottom {
+        left: -15px;
+        bottom: -20px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-stat-row {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+
+    .project-buttons {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form-card {
+        padding: 24px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .modal-body {
+        padding: 22px;
+    }
+
+    .modal-image-box {
+        height: 200px;
+    }
+}
+
+/* --- Small Mobile Phones (<= 480px) --- */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero-buttons {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .filter-btn {
+        padding: 7px 16px;
+        font-size: 0.82rem;
+    }
+}
